@@ -1,0 +1,38 @@
+<html>
+    <body>
+<div class="container">
+  <form  [formGroup]='myForm'>
+    <div class="step">
+      <h3 class="main_question mb-4"><strong>2 of 6</strong>Choose your weight</h3>
+      <div class="review_block">
+        <p class="range-field">
+          <span class="min_slider">40 Kg</span>
+          <span class="max_slider">130 Kg</span>
+          <input  (input)="bow()" formControlName = "weight" type="range" id="range_height" min="40" max="130" step="1"  oninput="this.nextElementSibling.value = this.value +' kg'"/> 
+         <output for ="range_height" >85 Kg</output>
+          
+       
+        </p>
+      </div>
+    </div>
+    <button  routerLink="/step1" type="button" name="backward" class="backward">Prev</button>
+    <button [disabled]="!tr" routerLink="/SkiLevel" type="button" name="forward" class="forward">Next</button>
+  
+
+  </form>
+  
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

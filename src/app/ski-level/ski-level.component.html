@@ -1,0 +1,69 @@
+
+
+	                                <div class="step">
+                                    <h3 class="main_question mb-4"><strong>3 of 6</strong>Choose your Ski level</h3>
+                                    <div class="review_block">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='newbie()' type="radio" id="no" name="q1"  class="required" value="newbie" >
+                                                    <label class="radio" for="no"></label>
+                                                    <label for="no" class="wrapper">Newbie</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='intermediate()' type="radio" id="maybe"  name="q1" class="required" value="intermediate" >
+                                                    <label class="radio" for="maybe"></label>
+                                                    <label for="maybe" class="wrapper">Intermediate</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='confirmed()'  type="radio" id="probably" name="q1" class="required" value="confirmed" >
+                                                    <label class="radio" for="probably"></label>
+                                                    <label for="probably" class="wrapper">Confirmed</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='proguide()'  type="radio" id="sure" name="q1" class="required" value="pro-guide" >
+                                                    <label class="radio" for="sure"></label>
+                                                    <label for="sure" class="wrapper">Pro-guide</label>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                        <button routerLink="/step2" type="button" name="backward" class="backward">Prev</button>
+                                        <button routerLink="/terrain" type="button" name="forward" class="forward">Next</button>
+                                      </div>
+
+<!--
+<html>
+
+    <body>
+<div class="container">
+  <form >
+  <div class="container section row">
+    <select   #mySelect   id="select_id" class="browser-default"  >
+      <option value="" disabled selected >Choose your Ski Level</option>
+      <option value="newbie">Newbie</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="confirmed">Confirmed</option>
+      <option value="pro-guide">PRO-Guide</option>
+    </select>
+    </div>
+  <a (click)="onChange(mySelect.value)"  routerLink="/terrain" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
+
+
+  
+  
+
+  </form>
+
+  
+</div>
+</body>
+
+</html>
+-->

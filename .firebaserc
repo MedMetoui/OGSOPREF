@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "clone-7a4f4": {
+      "hosting": {
+        "test-app": [
+          "clone-7a4f4"
+        ]
+      }
+    }
+  }
+}

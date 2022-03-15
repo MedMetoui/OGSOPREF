@@ -1,0 +1,90 @@
+
+
+	                                <div class="step">
+                                    <h3 class="main_question mb-4"><strong>5 of 6</strong>Choose your Ski Style<strong>one or more</strong></h3>
+                                    <div class="review_block">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='piste()' type="checkbox" id="no" name="q1"  class="required" value="piste" >
+                                                    <label class="radio" for="no"></label>
+                                                    <label for="no" class="wrapper">Piste</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='freeride()' type="checkbox" id="maybe"  name="q1" class="required" value="freeride" >
+                                                    <label class="radio" for="maybe"></label>
+                                                    <label for="maybe" class="wrapper">Freeride</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='couloire()'  type="checkbox" id="probably" name="q1" class="required" value="couloire" >
+                                                    <label class="radio" for="probably"></label>
+                                                    <label for="probably" class="wrapper">Couloire</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)='powder()'  type="checkbox" id="sure" name="q1" class="required" value="powder" >
+                                                    <label class="radio" for="sure"></label>
+                                                    <label for="sure" class="wrapper">Powder</label>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                        <button routerLink="/terrain" type="button" name="backward" class="backward">Prev</button>
+                                        <button routerLink="/riding" type="button" name="forward" class="forward">Next</button>
+                                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<html>
+
+    <body>
+<div class="container">
+  <form >
+  <div class="container section row">
+    <select   #mySelect   id="select_id" class="browser-default"  >
+      <option value="" disabled selected >Choose your Ski style</option>
+      <option value="piste">Piste</option>
+      <option value="freeride">Freeride</option>
+      <option value="powder">Powder</option>
+      <option value="couloire">Couloire</option>
+    </select>
+    </div>
+  <a (click)="onChange(mySelect.value)"  routerLink="/riding" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
+
+
+  
+  
+
+  </form>
+
+  
+</div>
+</body>
+
+</html>
+-->

@@ -1,0 +1,23 @@
+<div class="step">
+  <h3 class="main_question mb-4"><strong>6 of 6</strong>Choose your riding pereferences</h3>
+  <div class="review_block">
+      <ul>
+          <li>
+              <div class="checkbox_radio_container">
+                  <input (change)='setSlow()' type="radio" id="no" name="q1"  class="required" value="slow" >
+                  <label class="radio" for="no"></label>
+                  <label for="no" class="wrapper">Slow with short turns</label>
+              </div>
+          </li>
+          <li>
+              <div class="checkbox_radio_container">
+                  <input (change)='setFast()' type="radio" id="maybe"  name="q1" class="required" value="fast" >
+                  <label class="radio" for="maybe"></label>
+                  <label for="maybe" class="wrapper">Fast with long turns</label>
+              </div>
+          </li>
+      </ul>
+      </div>
+      <button routerLink="/SkiLevel" type="button" name="backward" class="backward">Prev</button>
+      <button routerLink="/result" type="button" name="forward" class="forward">Next</button>
+          </div>

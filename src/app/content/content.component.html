@@ -1,0 +1,29 @@
+
+
+
+
+<html>
+    <body>
+<div class="container">
+  <form  [formGroup]='myForm'>
+    <div class="step">
+      <h3 class="main_question mb-4"><strong>1 of 6</strong>Choose your height</h3>
+      <div class="review_block">
+        <p class="range-field">
+          <span class="min_slider">140 cm</span>
+          <span class="max_slider">200 cm</span>
+          <input (input)="bow()" formControlName = "height"  class="slider" type="range" id="range_height" min="140" max="200" step="1"   oninput="this.nextElementSibling.value = this.value +' cm'"/> 
+       <output for ="range_height" >171 cm</output>
+       
+       
+        </p>
+      </div>
+    </div>
+    <button [disabled]="!tr" routerLink="/step2" type="button" name="forward" class="forward">Next</button>
+  
+
+  </form>
+  
+</div>
+</body>
+</html>
